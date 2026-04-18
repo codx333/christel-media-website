@@ -137,6 +137,34 @@
 })();
 
 
+/* ── SCROLL PROGRESS BAR ───────────────────────────────────── */
+(function initScrollProgress() {
+  const bar = document.getElementById('scrollProgress');
+  if (!bar) return;
+
+  function update() {
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0';
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+
+/* ── CONSOLE EASTER EGG ────────────────────────────────────── */
+(function initConsoleEgg() {
+  console.log(
+    '%cCHRISTEL·MEDIA',
+    'font-family:system-ui;font-weight:800;font-size:24px;color:#FF4400;'
+  );
+  console.log(
+    '%cMarketing & KI-Automatisierung — Düsseldorf\nhttps://christelmediamarketing.de',
+    'font-family:system-ui;font-size:12px;color:#8A857A;'
+  );
+})();
+
+
 /* ── SMOOTH SCROLL ──────────────────────────────────────────── */
 (function initSmoothScroll() {
   // Native scroll-behavior:smooth is set in CSS.
@@ -157,6 +185,16 @@
       const top    = target.getBoundingClientRect().top + window.scrollY - navH;
 
       window.scrollTo({ top, behavior: 'smooth' });
+
+      // Flash highlight on target card if it has .card class
+      if (target.classList.contains('card')) {
+        target.classList.remove('scroll-highlight');
+        void target.offsetWidth; // force reflow for re-trigger
+        target.classList.add('scroll-highlight');
+        target.addEventListener('animationend', () => {
+          target.classList.remove('scroll-highlight');
+        }, { once: true });
+      }
     });
   });
 })();

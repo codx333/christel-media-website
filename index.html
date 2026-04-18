@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christel Media — Eine Lösung. Für jedes Problem.</title>
-  <meta name="description" content="Christel Media verbindet intelligentes Marketing mit KI-Automatisierung — damit Ihr Unternehmen effizienter, sichtbarer und zukunftsfähig wird.">
+  <meta name="description" content="Christel Media verbindet intelligentes Marketing mit KI-Automatisierung, damit Ihr Unternehmen effizienter, sichtbarer und zukunftsfähig wird.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Syne+Mono&family=Epilogue:ital,wght@0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <!-- Custom cursor (desktop only) -->
   <div class="cur" id="cur" aria-hidden="true"></div>
@@ -40,7 +43,7 @@
     <ul id="navMenu" role="list">
       <li><a href="#leistungen">Leistungen</a></li>
       <li><a href="#prozess">Prozess</a></li>
-      <li><a href="#schulungen">KI-Schulungen</a></li>
+      <li><a href="schulungen/">KI-Schulungen</a></li>
       <li><a href="#kontakt" class="nav-btn">Gespräch buchen</a></li>
     </ul>
   </nav>
@@ -58,13 +61,12 @@
             <span style="color:var(--orange)">Problem.</span>
             <span style="-webkit-text-stroke:1.5px rgba(242,239,232,.4);color:transparent">Ziel.</span>
             <span style="color:var(--orange)">Projekt.</span>
-            <span style="-webkit-text-stroke:1.5px rgba(242,239,232,.4);color:transparent">Wachstum.</span>
             <span style="color:var(--orange)">Problem.</span>
           </span></span></span>
         </h1>
         <p class="hero-sub">
           Christel Media verbindet <strong>intelligentes Marketing</strong> mit
-          <strong>KI-Automatisierung</strong> — damit Ihr Unternehmen effizienter,
+          <strong>KI-Automatisierung</strong>, damit Ihr Unternehmen effizienter,
           sichtbarer und zukunftsfähig wird.
         </p>
       </div>
@@ -77,28 +79,18 @@
           </a>
           <a href="#leistungen" class="btn-out">Mehr erfahren</a>
         </div>
-        <div class="hstats">
-          <div>
-            <div class="hstat-n">3<em>×</em></div>
-            <div class="hstat-l">Lead-Uplift</div>
-          </div>
-          <div>
-            <div class="hstat-n">48<em>h</em></div>
-            <div class="hstat-l">Bis Automatisierung</div>
-          </div>
-        </div>
       </div>
     </div>
 
     <div class="hero-right">
       <div class="hr-label">Unsere Leistungen</div>
       <ul class="slist" role="list">
-        <li><span class="slnum">01</span>Marketing &amp; Lead-Generierung<span class="slarr" aria-hidden="true">→</span></li>
-        <li><span class="slnum">02</span>Prozess-Automatisierung<span class="slarr" aria-hidden="true">→</span></li>
-        <li><span class="slnum">03</span>Kundenkommunikation<span class="slarr" aria-hidden="true">→</span></li>
-        <li><span class="slnum">04</span>System Operations<span class="slarr" aria-hidden="true">→</span></li>
-        <li><span class="slnum">05</span>KI-Integration<span class="slarr" aria-hidden="true">→</span></li>
-        <li><span class="slnum">06</span>KI-Schulungen<span class="slarr" aria-hidden="true">→</span></li>
+        <li><a href="#svc-01"><span class="slnum">01</span>Marketing &amp; Lead-Generierung<span class="slarr" aria-hidden="true">→</span></a></li>
+        <li><a href="#svc-02"><span class="slnum">02</span>Prozess-Automatisierung<span class="slarr" aria-hidden="true">→</span></a></li>
+        <li><a href="#svc-03"><span class="slnum">03</span>Kundenkommunikation<span class="slarr" aria-hidden="true">→</span></a></li>
+        <li><a href="#svc-04"><span class="slnum">04</span>System Operations<span class="slarr" aria-hidden="true">→</span></a></li>
+        <li><a href="#svc-04"><span class="slnum">05</span>KI-Integration<span class="slarr" aria-hidden="true">→</span></a></li>
+        <li><a href="#schulungen"><span class="slnum">06</span>KI-Schulungen<span class="slarr" aria-hidden="true">→</span></a></li>
       </ul>
     </div>
   </section>
@@ -110,38 +102,50 @@
         <div class="stag">Leistungen</div>
         <h2 class="sh" id="svc-heading">Alles.<br>Aus einer Hand.</h2>
       </div>
-      <p>Von der ersten Lead-Kampagne bis zur vollständig <strong>automatisierten Unternehmenskommunikation</strong> — wir bauen die Systeme, die für Sie arbeiten, während Sie schlafen.</p>
+      <div class="svctop-right">
+        <p class="svctop-desc">Während andere noch planen, liefern wir Ergebnisse. Von der ersten Kampagne bis zum <strong>laufenden KI-System</strong>: in Wochen, nicht Monaten.</p>
+        <div class="svtstats">
+          <div class="svtstat">
+            <div class="svtstat-n"><em>−</em>70<em>%</em></div>
+            <div class="svtstat-l">Weniger Aufwand für Routine &amp; manuelle Prozesse</div>
+          </div>
+          <div class="svtstat">
+            <div class="svtstat-n">2<em> Wo.</em></div>
+            <div class="svtstat-l">Von Erstgespräch bis Go-Live</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="cgrid">
-      <div class="card rv d1">
+      <div class="card rv d1" id="svc-01">
         <div class="cnum" aria-hidden="true">01</div>
-        <div class="ctag">01 — Marketing</div>
+        <div class="ctag">01: Marketing</div>
         <h3 class="ctitle">Marketing &amp;<br>Lead-Generierung</h3>
-        <p class="ctext">Datengetriebene Kampagnen über Social Ads, SEO und Content. Kein Streufeuer — nur qualifizierte Leads, die konvertieren.</p>
+        <p class="ctext">Datengetriebene Kampagnen über Social Ads, SEO und Content. Kein Streufeuer, nur qualifizierte Leads, die konvertieren.</p>
       </div>
-      <div class="card rv d2">
+      <div class="card rv d2" id="svc-02">
         <div class="cnum" aria-hidden="true">02</div>
-        <div class="ctag">02 — Automation</div>
+        <div class="ctag">02: Automation</div>
         <h3 class="ctitle">Prozess-<br>Automatisierung</h3>
-        <p class="ctext">Manuelle Engpässe durch intelligente Workflows ersetzen — mit n8n, Make und maßgeschneiderten Lösungen.</p>
+        <p class="ctext">Manuelle Engpässe durch intelligente Workflows ersetzen: mit n8n, Make und maßgeschneiderten Lösungen.</p>
       </div>
-      <div class="card rv d3">
+      <div class="card rv d3" id="svc-03">
         <div class="cnum" aria-hidden="true">03</div>
-        <div class="ctag">03 — Kommunikation</div>
+        <div class="ctag">03: Kommunikation</div>
         <h3 class="ctitle">Kunden-<br>kommunikation</h3>
-        <p class="ctext">E-Mail-Sequenzen, CRM-Integration, KI-Chatbots — Ihre Kunden fühlen sich immer betreut. Auch nachts.</p>
+        <p class="ctext">E-Mail-Sequenzen, CRM-Integration, KI-Chatbots, Ihre Kunden fühlen sich immer betreut. Auch nachts.</p>
       </div>
 
-      <div class="card cwide rv d1">
+      <div class="card cwide rv d1" id="svc-04">
         <div class="cwide-left">
           <div class="cnum" aria-hidden="true">04</div>
-          <div class="ctag">04 + 05 — Technik &amp; KI</div>
+          <div class="ctag">04 + 05: Technik &amp; KI</div>
           <h3 class="ctitle">System Operations<br>&amp; KI-Integration</h3>
-          <p class="ctext">Aufbau und Betrieb Ihrer digitalen Infrastruktur: Notion, CRM, Dashboards, APIs — plus KI-Agenten direkt in Ihren Prozessen.</p>
+          <p class="ctext">Aufbau und Betrieb Ihrer digitalen Infrastruktur: Notion, CRM, Dashboards, APIs, plus KI-Agenten direkt in Ihren Prozessen.</p>
         </div>
         <div class="cwide-right">
-          <p>Wir bringen <strong>echte KI-Kompetenz</strong> in Ihr Unternehmen — nicht als Buzzword, sondern als laufendes System, das täglich Mehrwert schafft und messbare Ergebnisse liefert.</p>
+          <p>Wir bringen <strong>echte KI-Kompetenz</strong> in Ihr Unternehmen: kein Buzzword, sondern ein laufendes System, das täglich Mehrwert schafft und messbare Ergebnisse liefert.</p>
         </div>
       </div>
     </div>
@@ -156,28 +160,28 @@
       <div class="pstep rv d1">
         <div class="pline" aria-hidden="true"></div>
         <div class="pdot" aria-hidden="true"></div>
-        <span class="pnum">01 — Start</span>
+        <span class="pnum">01: Start</span>
         <h3 class="ptitle">Analyse</h3>
         <p class="ptext">Kostenfreies Erstgespräch. Wir verstehen Ihre Prozesse, Ziele und Herausforderungen — ehrlich, ohne Verkaufsdruck.</p>
       </div>
       <div class="pstep rv d2">
         <div class="pline" aria-hidden="true"></div>
         <div class="pdot" aria-hidden="true"></div>
-        <span class="pnum">02 — Plan</span>
+        <span class="pnum">02: Plan</span>
         <h3 class="ptitle">Strategie</h3>
         <p class="ptext">Maßgeschneiderter Fahrplan: Welche Maßnahmen liefern den größten Impact in kürzester Zeit?</p>
       </div>
       <div class="pstep rv d3">
         <div class="pline" aria-hidden="true"></div>
         <div class="pdot" aria-hidden="true"></div>
-        <span class="pnum">03 — Build</span>
+        <span class="pnum">03: Build</span>
         <h3 class="ptitle">Umsetzung</h3>
-        <p class="ptext">Schnell, transparent, messbar. Wir bauen — Sie sehen Ergebnisse. Agil, ohne endlose Abstimmungsschleifen.</p>
+        <p class="ptext">Schnell, transparent, messbar. Wir bauen, Sie sehen Ergebnisse. Agil, ohne endlose Abstimmungsschleifen.</p>
       </div>
       <div class="pstep rv d4">
         <div class="pline" aria-hidden="true"></div>
         <div class="pdot" aria-hidden="true"></div>
-        <span class="pnum">04 — Scale</span>
+        <span class="pnum">04: Scale</span>
         <h3 class="ptitle">Optimierung</h3>
         <p class="ptext">Kontinuierliches Monitoring und Verbesserung. Ihre Systeme laufen mit Ihnen und Ihrem Markt mit.</p>
       </div>
@@ -221,7 +225,7 @@
     <div class="tr-con">
       <div class="stag rv">KI-Schulungen</div>
       <h2 class="sh rv d1" id="tr-heading">Ihr Team.<br>KI-Ready.</h2>
-      <p class="tr-desc rv d2">Theorie ist gut. Praxis macht den Unterschied. Unsere Workshops vermitteln echte Kompetenz — zugeschnitten auf Ihre Branche und Arbeitsabläufe.</p>
+      <p class="tr-desc rv d2">Theorie ist gut. Praxis macht den Unterschied. Unsere Workshops vermitteln echte Kompetenz, zugeschnitten auf Ihre Branche und Arbeitsabläufe.</p>
 
       <div class="modlist rv d3">
         <div class="mod">
@@ -244,7 +248,7 @@
           <span class="mnum">03</span>
           <div>
             <div class="mtit">Automatisierung mit No-Code-Tools</div>
-            <div class="mdesc">n8n, Make, Zapier — Ihre Mitarbeiter bauen eigene Workflows ohne eine Zeile Code.</div>
+            <div class="mdesc">n8n, Make, Zapier: Ihre Mitarbeiter bauen eigene Workflows ohne eine Zeile Code.</div>
           </div>
           <div class="mbadge">Advanced</div>
         </div>
@@ -252,7 +256,7 @@
           <span class="mnum">04</span>
           <div>
             <div class="mtit">DSGVO-konformer KI-Einsatz</div>
-            <div class="mdesc">Rechtssichere Nutzung von KI-Tools — was erlaubt ist, was nicht, wie man es richtig macht.</div>
+            <div class="mdesc">Rechtssichere Nutzung von KI-Tools: was erlaubt ist, was nicht, wie man es richtig macht.</div>
           </div>
           <div class="mbadge">Compliance</div>
         </div>
@@ -273,15 +277,15 @@
     <div>
       <div class="ctah" id="cta-heading">
         Bereit für <em>Ihre</em> Lösung?
-        <sub>Kostenloses Erstgespräch — kein Verkaufsdruck.</sub>
+        <sub>Kostenloses Erstgespräch, kein Verkaufsdruck.</sub>
       </div>
     </div>
     <div class="cta-action">
-      <a href="mailto:hallo@christel.media" class="btn-big">
+      <a href="mailto:hello@christelmediamarketing.de?subject=Anfrage%3A%20Kostenloses%20Erstgespr%C3%A4ch&body=Guten%20Tag%2C%0A%0Aich%20habe%20Ihre%20Website%20besucht%20und%20m%C3%B6chte%20gerne%20ein%20kostenloses%20Erstgespr%C3%A4ch%20anfragen.%0A%0AKurze%20Beschreibung%20meines%20Unternehmens%20und%20meiner%20Herausforderung%3A%0A%5BBitte%20hier%20kurz%20beschreiben%5D%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen%2C%0A%5BIhr%20Name%5D%0A%5BUnternehmen%5D" class="btn-big">
         Jetzt Termin buchen
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <div class="ctalbl">hallo@christel.media · Düsseldorf</div>
+      <div class="ctalbl">hello@christelmediamarketing.de · Düsseldorf</div>
     </div>
   </section>
 
@@ -300,7 +304,7 @@
           <li><a href="#leistungen">Kundenkommunikation</a></li>
           <li><a href="#leistungen">System Operations</a></li>
           <li><a href="#leistungen">KI-Integration</a></li>
-          <li><a href="#schulungen">KI-Schulungen</a></li>
+          <li><a href="schulungen/">KI-Schulungen</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -308,8 +312,7 @@
         <ul role="list">
           <li><a href="#">Über uns</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
-          <li><a href="#">Impressum</a></li>
-          <li><a href="#">Datenschutz</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
         </ul>
       </div>
     </div>
