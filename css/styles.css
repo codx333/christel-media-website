@@ -883,9 +883,10 @@ nav ul a:hover::after { width: 100%; }
 .mtit {
   font-family: 'Syne', sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.35;
   letter-spacing: .01em;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .mdesc { font-size: 13px; font-weight: 300; color: var(--dim); line-height: 1.7; }
 .mbadge {
